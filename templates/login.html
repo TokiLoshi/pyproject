@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Login
+{% endblock %}
+
+{% block main %}
+<form action="/login" method="post">
+  <div>
+    <div class="container p-2 shadow rounded-3 grey">
+      <h1>You may only enter if you know the secret word</h1>
+
+    </div>
+  </div>
+</form>
+
+{% endblock %}
