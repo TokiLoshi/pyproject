@@ -7,12 +7,53 @@
   <!--Bootstrap https://getbootstrap.com/docs/5.2/getting-started/download/-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<link rel="/static/styles.css" rel="stylesheet">
+<!--Icons from Font Awesome-->
+<script src="https://kit.fontawesome.com/a56b22975c.js" crossorigin="anonymous"></script>
+<link href="/static/styles.css" rel="stylesheet">
+ <!--Icons from Twemoji Twitter Icons Copyright 2020 Twitter Inc Licensed under CC-BY 4.0 International (CC BY 4.0) https://favicon.io/emoji-favicons/honeybee/-->
+ <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+ <link rel="icon" type ="image/png" href="/static/favicon.ico">
+ <link rel="manifest" href="/site.webmanifest">
 <body>
-  <h1>Hello World</h1>
- <footer class="bg-dark border bavbardark navbar-fixed-bottom p-3 border-0">
-  <p class="text-center mt-2">Your morning news brought to you by CS50P 🐥</p>
-
- </footer> 
+  <nav class="bg-dark border navbar navbar-expand-md navbar-dark border-0">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/static/favicon-32x32.png"/> B's Briefing</a>
+        <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            {% if session["user_id"] %}
+                <ul class="navbar-nav me-auto mt-2">
+                    <li class="nav-item"><a class="nav-link" href="/homeuser">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/news">News</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto mt-2">
+                    <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+                </ul>
+            {% else %}
+                <ul class="navbar-nav ms-auto mt-2">
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+</nav>
+  {% if get_flashed_messages() %}
+    <header>
+        <div class="alert alert-primary mb-0 text-center" role="alert">
+            {{ get_flashed_messages() | join(" ") }}
+        </div>
+    </header>
+{% endif %}
+<main class="container-fluid py-2 ps-0 pe-0 text-center dark-blue">
+    {% block main %}{% endblock %}
+</main>
+<footer class="bg-dark border navbar-dark navbar-fixed-bottom p-3 border-0" style="background-color: #e3f2fd;">
+  <p class="text-center mt-2" id="pyfooter">Coded with curiosity by Bianca Silva, 2022. Feel free to fork my project on <a href="https://github.com/TokiLoshi/pyproject" target="_blank"><i class="fa-brands white fa-github fa-2x"></i></a></p>
+</footer>
 </body>
 </html>

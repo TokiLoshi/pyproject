@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Contact
+{% endblock %}
+
+{% block main %}
+<form action="/contact" method="get">
+  <h1>This is the contact page</h1>
+</form>
+{% endblock %}
