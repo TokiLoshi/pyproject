@@ -4,11 +4,19 @@ body
   background-color: #EAECEE;
   /* background-color: #343434; */
 }
+.darktext{
+  background-color: #EAECEE;
+  color: black;
+}
 
 .fa-brands{
   color: white;
+  opacity: 0.2;
 }
 #pyfooter{
   text-align: center;
   color: white;
+}
+.link-text {
+  color: black;
 }
