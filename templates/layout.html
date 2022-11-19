@@ -17,26 +17,27 @@
  <link rel="icon" type ="image/png" href="/static/favicon.ico">
  <link rel="manifest" href="/site.webmanifest">
 <body>
-  <nav class="bg-dark border navbar navbar-expand-md navbar-dark border-0">
+  <!-- <nav class="bg-dark border navbar navbar-expand-md navbar-dark border-0" style="background-color: #6f42c1;"> -->
+    <nav class="bg navbar navbar-expand-md border-0" style="background-color: #5E16EA;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src="/static/favicon-32x32.png"/> B's Briefing</a>
+        <a class="navbar-brand" style="color: #FFFFFF;" href="/"><img src="static/android-chrome-192x192.png" class="w-25"/> B's Briefing</a>
         <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar">
             {% if session["user_id"] %}
                 <ul class="navbar-nav me-auto mt-2">
-                    <li class="nav-item"><a class="nav-link" href="/homeuser">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/homeuser" style="color: #FFFFFF;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/news" style="color: #FFFFFF;">News</a></li>
                 </ul>
                 <ul class="navbar-nav ms-auto mt-2">
-                    <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/logout" style="color: #FFFFFF;">Log Out</a></li>
                 </ul>
             {% else %}
                 <ul class="navbar-nav ms-auto mt-2">
-                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about" style="color: #FFFFFF;">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact" style="color: #FFFFFF;">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login" style="color: #FFFFFF;">Login</a></li>
                 </ul>
             {% endif %}
         </div>
@@ -52,8 +53,9 @@
 <main class="container-fluid py-2 ps-0 pe-0 text-center dark-blue">
     {% block main %}{% endblock %}
 </main>
-<footer class="bg-dark border navbar-dark navbar-fixed-bottom p-3 border-0" style="background-color: #e3f2fd;">
-  <p class="text-center mt-2" id="pyfooter">Coded with curiosity by Bianca Silva, 2022. Feel free to fork my project on <a href="https://github.com/TokiLoshi/pyproject" target="_blank"><i class="fa-brands white fa-github fa-2x"></i></a></p>
-</footer>
+
+<Footer class="bg border-0 fixed-bottom p-3 border-0 mx-auto mt-2 w-100" style="background-color: #5E16EA; text-align : center;">
+    <p class="text-align-center mt-2" id="pyfooter" style="text-align:center">Coded with curiosity by Bianca Silva, 2022. Feel free to fork my project on <a href="https://github.com/TokiLoshi/pyproject" target="_blank"><i class="fa-brands white fa-github fa-2x"></i></a></p>
+</Footer>
 </body>
 </html>

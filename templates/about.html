@@ -7,6 +7,7 @@
 {% block main %}
 <form action="/about" method="get">
   <h1>About B's Briefing</h1>
+  <div class="container">
   <div id="carouselExampleCaptions" class="carousel slide mt-2" data-bs-ride="false">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -47,6 +48,9 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
+    <a href="/contact" class="btn btn-lg mt-2" style="background-color: #5E16EA; color : white" tabindex="-1" role="button" aria-disabled="false">Contact</a>  
+
   </div>
 </form>
 {% endblock %}

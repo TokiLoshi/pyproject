@@ -6,6 +6,26 @@
 
 {% block main %}
 <form action="/" method="get">
-  <h1>This is the home page</h1>
+  <div class="container mb-5">
+    <div class="card fluid center mx-auto w-75">
+      <!--Photo by cottonbro studio: https://www.pexels.com/photo/white-ceramic-mug-on-top-of-a-newspaper-3944425/-->
+      <img src="static/pexels-cottonbro-studio-3944425.jpg" class="card-img-top" alt="newspaper with mug of black coffee on it">
+      <div class="card-body">
+        <p class="card-text">What do you do when you have family all over the world, and your news sources are similarly all over the place? What do you do when you have 81,926 unread email messages, and half of them are news headlines you can catch on Apple News? What do you do when you find yourself doom-scrolling through Apple News and only get half the picture. Simple, you build your own news aggregator with a web scraping app and create your own dashboard. Introducing, B's briefing, a simple flask app built using python and the Beautiful Soup library.</p>
+      </div>
+    </div>
+    <div class="card fluid center mt-2 mx-auto w-75">
+      <!--This is going to be a demo video-->
+      <h3 class="mt-2">Demo Video coming soon</h3>
+      <img src="static/pexels-cottonbro-studio-3944425.jpg" class="card-img-top" alt="newspaper with mug of black coffee on it">
+      <div class="card-body">
+        <p class="card-text">Have visitor access? Login and check it out for yourself.</p>
+        <a href="/login" class="btn btn-lg mt-2" style="background-color: #5E16EA; color : white" tabindex="-1" role="button" aria-disabled="false">Check it out</a>  
+      </div>
+    </div>  
+  </div>
+</br>
+</br>
+</br>
 </form>
 {% endblock %}
