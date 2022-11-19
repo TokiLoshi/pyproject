@@ -6,6 +6,103 @@
 
 {% block main %}
 <form action="/news" method="get">
-  <h2>It's news o'clock</h2>
+    <div class="card body rounded-2 shadow p-2 mb-2 border-0 grey m-2 justify-content-center mx-auto w-auto me-5 ms-5">            
+      <div class="row justify-content-center">
+        <div class="col-auto mb-2">
+          <div class="d-flex">
+            <div class="card shadow  border-0 rounded-3 mx-auto">
+              <div class="card-body">
+                <!--Photo by Tae Fuller from Pexels: https://www.pexels.com/photo/golden-gate-bridge-san-francisco-california-1141853/-->
+                <h3>☕️ Your personalized briefing</h3>
+                <p><b>San Francisco</b> 🌁 {{sftime}}</p>
+                <!--Photo by Quang Anh Ha Nguyen: https://www.pexels.com/photo/panda-printed-paper-coffee-cup-on-table-885021/ -->
+             <img class="img-fluid rounded-2 justify-content-center w-50" src="/static/panda.png" alt="coffee mug with a panda on it"/>
+            <h3>Times around the world:</h3>
+            
+            <p><b>New York</b> 🗽 {{nytime}}</p>
+            <p><b>Zurich</b> 🏔  {{zurichtime}}</p>
+            <p><b>Mozambique</b>☀️  {{africatime}}</p>  
+            </div>
+            </div>
+          </div>
+  
+    <div class="card body rounded-2 shadow mb-2 mt-3 ps-1 pe-1 border-0 justify-content-center mx-auto w-auto">
+            <h2 class="card-title">Today's Headlines:</h5>                
+            <div class="row justify-content-center">
+              <div class="col-auto mb-2">
+                <div class="d-flex">
+                  <div class="card shadow rounded-3 mx-auto" style="width: 16rem;">
+                    <div class="card-body">
+                      <!--Photo by Tae Fuller from Pexels: https://www.pexels.com/photo/golden-gate-bridge-san-francisco-california-1141853/-->
+                      <img class="img-fluid rounded-2 justify-content-center mx-auto w-auto" src="/static/pexels-tae-fuller-1141853.jpg" alt="Golden Gate Bridge with pink clouds over it"/>
+                        <h5 class="card-title"><b>SF headlines:</b></h5>
+                        {% for article in sf_news %}
+                          <p>{{article}}</p>
+                        {% endfor %}
+                        <!-- <p><b>Text will go here</b></p>  -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto mb-2">
+                <div class="d-flex">
+                  <div class="card shadow mx-auto rounded-3" style="width: 16rem;">
+                    <div class="card-body">
+                      <!--Photo by ThisIsEngineering: https://www.pexels.com/photo/code-projected-over-woman-3861969/-->
+                      <img class="img-fluid rounded-2 justify-content-center mx-auto w-auto" src="/static/pexels-thisisengineering-3861969.jpg" alt="woman standing infront of projector with code over it"/>
+                        <h5 class="card-title"><b>Tech headlines:</b></h5>
+                        <!-- <p>Text will go here</p>  -->
+                        {% for article in tech_news %}
+                          {{article}}
+                          </br>
+                        </br>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto mb-2">
+                <div class="d-flex">
+                  <div class="card shadow rounded-3 mx-auto" style="width: 16rem;">
+                    <div class="card-body">
+                      <!--Photo by Frans van Heerden: https://www.pexels.com/photo/two-rhino-on-gray-field-631292/-->
+                      <img class="img-fluid rounded-2 justify-content-center mx-auto w-auto" src="/static/pexels-frans-van-heerden-631292.jpg" alt="two Rhinos grazing"/>
+                        <h5 class="card-title"><b>SA headlines:</b></h5>
+                        <!-- <p>Text will go here</p>  -->
+                        {% for article in sa_news %}
+                        <p>{{article}}</p>
+                    </hr>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto mb-2">
+                <div class="d-flex">
+                  <div class="card shadow rounded-3 mb-3" style="width: 16rem;">
+                    <div class="card-body">
+                      <!--Photo by Harry Cunningham @harry.digital: https://www.pexels.com/photo/tree-under-starry-sky-3347324/-->
+                      <img class="img-fluid rounded-2 justify-content-center mx-auto w-auto" src="/static/baobab.png" alt="frenchie"/>
+                        <h5 class="card-title"><b>Africa headlines:</b></h5>
+                        <!-- <p>Text will go here</p>  -->
+                        {% for article in africa_news %}
+                        <a>{{article}}</a>
+                          </br>
+                          </br>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>  
+    </div>
+</div>
+</div>
+</br>
+</br>
+</br>
+</br>
 </form>
 {% endblock %}

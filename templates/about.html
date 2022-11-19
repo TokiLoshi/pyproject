@@ -7,7 +7,7 @@
 {% block main %}
 <form action="/about" method="get">
   <h1>About B's Briefing</h1>
-  <div class="container">
+  <div class="container mb-5 rounded shadow mt-2">
   <div id="carouselExampleCaptions" class="carousel slide mt-2" data-bs-ride="false">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -17,26 +17,27 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <!--Newspapers Photo by Suzy Hazelwood: https://www.pexels.com/photo/red-framed-eyeglasses-on-newspapers-3886870/-->
-        <img src="/static/pexels-suzy-hazelwood-3886870.jpg" class="d-block w-100" alt="red reading glasses folded ontop of a pile of newspapers">
+        <img src="/static/pexels-suzy-hazelwood-3886870.jpg" class="d-block w-100 mt-3 rounded shadow" alt="red reading glasses folded ontop of a pile of newspapers">
         <div class="darktext rounded shadow carousel-caption d-none d-md-block">
           <h5>What is this site for?</h5>
-          <p>Hi, I'm Bianca, but my friends call me B, and this is my Final Project for Harvard's CS50 Introduction to Programming with Python. Using the Beautiful Soup Library, I built a web scraper to pull headlines from various news sources and display them as a news dashboard on a simple flask app.</p>
+          <p class="pe-3 ps-3">Hi, I'm Bianca, but my friends call me B, and this is my Final Project for Harvard's CS50 Introduction to Programming with Python. Using the Beautiful Soup Library, I built a web scraper to pull headlines from various news sources and display them as a news dashboard on a simple flask app.</p>
         </div>
       </div>
+
       <div class="carousel-item">
         <!--Laptop open reading news Photo by Jane Doan: https://www.pexels.com/photo/laptop-with-news-on-the-screen-723072/-->
-        <img src="/static/pexels-jane-doan-723072.jpg" class="d-block w-100" alt="Laptop open showing news website next to tray of mugs">
+        <img src="/static/pexels-jane-doan-723072.jpg" class="d-block w-100 mt-3 rounded shadow" alt="Laptop open showing news website next to tray of mugs">
         <div class="darktext rounded shadow p-2 carousel-caption d-none d-md-block">
           <h5>Why did you want to build a web scraper?</h5>
-          <p>Web scraping is a powerful tool and is something I wanted to learn. I wanted to build a web scraper to solve one of my irritations in life, too many emails with news headlines. I wanted a site that would include news I don't have in one place, including news from South Africa, Mozambique, San Francisco, and Tech news. Having all of this in one place saves me time in the morning and keeps me up to date with industry, local and global events.</p>
+          <p class="pe-3 ps-3">Web scraping is a powerful tool and is something I wanted to learn. I wanted to build a web scraper to solve one of my irritations in life, too many emails with news headlines. I wanted a site that would include news I don't have in one place, including news from South Africa, Mozambique, San Francisco, and Tech news. Having all of this in one place saves me time in the morning and keeps me up to date with industry, local and global events.</p>
         </div>
       </div>
       <div class="carousel-item">
         <!--321 lets go Photo by SevenStorm JUHASZIMRUS: https://www.pexels.com/photo/123-let-s-go-imaginary-text-704767/-->
-        <img src="/static/pexels-sevenstorm-juhaszimrus-704767.jpg" class="d-block w-100" alt="spray painted speech bubble with 1,2,3...LET'S GO painted on it on a wooden background">
+        <img src="/static/pexels-sevenstorm-juhaszimrus-704767.jpg" class="d-block w-100 mt-3 rounded shadow" alt="spray painted speech bubble with 1,2,3...LET'S GO painted on it on a wooden background">
         <div class="darktext shadow rounded p-2 carousel-caption d-none d-md-block">
           <h5>Why is a login necessary?</h5>
-          <p>To reduce the number of calls to these sites and potentially get my IP blocked, I decided to make it necessary to log in to view the news headlines. I created a demo video on the home page to showcase how the site works. If you'd like to try it out, you are welcome to contact me and ask for visitor access.</p>
+          <p class="pe-3 ps-3">To reduce the number of calls to these sites and potentially get my IP blocked, I decided to make it necessary to log in to view the news headlines. I created a demo video on the home page to showcase how the site works. If you'd like to try it out, you are welcome to contact me and ask for visitor access.</p>
         </div>
       </div>
     </div>
@@ -49,8 +50,11 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-    <a href="/contact" class="btn btn-lg mt-2" style="background-color: #5E16EA; color : white" tabindex="-1" role="button" aria-disabled="false">Contact</a>  
+    <a href="/contact" class="btn btn-lg mt-2 mb-5" style="background-color: #5E16EA; color : white" tabindex="-1" role="button" aria-disabled="false">Contact</a>  
 
   </div>
+</br>
+</br>
+</br>
 </form>
 {% endblock %}
