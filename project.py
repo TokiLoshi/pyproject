@@ -35,15 +35,19 @@ def main():
   current_sf, current_eastcoast, current_time_europe, current_time_africa = get_date_time()
 
   # Return to app so it can render
-  print(africa_news)
   return tech_news, sf_news, africa_news, sa_news
 
 def get_tech_news(tech_url):
   # Tech crunch 
   url = tech_url
   try_url = requests.get(tech_url)
-  tech_soup = BeautifulSoup(try_url.content, "lxml")
-  tech_headline_soup = tech_soup.find_all("h2")
+  print(try_url)
+  # Tutorial on checking response codes: https://www.geeksforgeeks.org/response-status_code-python-requests/
+  if try_url.status_code == 200:
+    tech_soup = BeautifulSoup(try_url.content, "lxml")
+    tech_headline_soup = tech_soup.find_all("h2")
+  else:
+    return "🙄 oops, something went wrong on the Crunchie site"
   
   tech_headlines = []
   count = 0
@@ -71,9 +75,12 @@ def get_tech_news(tech_url):
 def get_sf_news(sf_url):
     # Local News for San Francisco: 
     sf_results = requests.get(sf_url)
-    sf_soup = BeautifulSoup(sf_results.content, "lxml")
-    headlines = sf_soup.find_all("h2")
-    headlines_list = []
+    if sf_results.status_code == 200:
+      sf_soup = BeautifulSoup(sf_results.content, "lxml")
+      headlines = sf_soup.find_all("h2")
+      headlines_list = []
+    else:
+      return "🙄 oops, something went wrong on the SFist site"
 
     for element in headlines:
       headlines_list.append(element.text)
@@ -90,10 +97,13 @@ def get_sa_news(sa_url):
 
     # Pulling headlines from daily Maverick 
     scrape_news = requests.get(sa_url)
-    news_soup = BeautifulSoup(scrape_news.content, "lxml")
-    headlines_soup = news_soup.find(class_="media-item")
-    headlines_link = (headlines_soup.find("a")).attrs['href']
-    
+    if scrape_news.status_code == 200:
+      news_soup = BeautifulSoup(scrape_news.content, "lxml")
+      headlines_soup = news_soup.find(class_="media-item")
+      headlines_link = (headlines_soup.find("a")).attrs['href']
+    else:
+      return "🙄 oops, something went wrong on the Daily Maverick site"
+
     # Get headlines and timestamps
     headline_one = headlines_soup.find("h1").text
     time_stamp = headlines_soup.find(class_="date").text
@@ -132,8 +142,12 @@ def get_sa_news(sa_url):
 
 def get_africa_news(africa_url):
   get_moz = requests.get(africa_url)
-  moz_soup = BeautifulSoup(get_moz.content, "lxml")
-  moz_headlines = moz_soup.find_all(class_="stories")
+  if get_moz.status_code == 200:
+    moz_soup = BeautifulSoup(get_moz.content, "lxml")
+    moz_headlines = moz_soup.find_all(class_="stories")
+  else:
+    return "🙄 oops, something went wrong on the All Africa site"
+  
   stories = []
   for element in moz_headlines:
     story = element.find_all("a")
