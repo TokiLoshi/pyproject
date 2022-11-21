@@ -28,9 +28,9 @@ Session(app)
 
 # Configure CS50 Library to use SQLite and adapt to tranfer to PostGres for Heroku deployment
 # https://cs50.readthedocs.io/heroku/
-uri = os.getenv("DATABASE_URL")
-if uri.startswith("postgres:"):
-  uri = uri.replace("postgress://", "postgresql://")
+# uri = os.getenv("DATABASE_URL")
+# if uri.startswith("postgres:"):
+#   uri = uri.replace("postgress://", "postgresql://")
 
 # db = SQL("sqlite:///news.db")
 
