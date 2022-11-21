@@ -9,6 +9,7 @@ exceptiongroup==1.0.4
 Flask==2.2.2
 Flask-Login==0.6.2
 Flask-Session==0.4.0
+gunicorn==20.1.0
 html5lib==1.1
 idna==3.4
 iniconfig==1.1.1
@@ -19,6 +20,7 @@ MarkupSafe==2.1.1
 mock==4.0.3
 packaging==21.3
 pluggy==1.0.0
+psycopg2==2.9.5
 pyparsing==3.0.9
 pytest==7.2.0
 pytz==2022.6
