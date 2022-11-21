@@ -1,0 +1,63 @@
+<h2 class="fi-main-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/19/this-week-in-apps-apple-epic-antitrust-battle-resumes-apple-sued-over-tracking-googles-new-rules-for-kids-apps/">This Week in Apps: Apple-Epic antitrust battle resumes, Apple sued over tracking, Google’s new rules for kids’ apps</a>
+</h2>, <h2 class="river__title river__title--home">The Latest</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/19/gopuff-launches-scheduled-deliveries-gifting-and-in-store-pickup/">
+                                Gopuff launches scheduled deliveries, gifting and in-store pickup                       </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/19/amazon-layoffs-begin-ticketmaster-cant-handle-taylor-swift-and-much-of-twitter-hq-quits/">
+                                Amazon layoffs begin, Ticketmaster can’t handle Taylor Swift, and much of Twitter HQ quits                   </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/19/ok-i-take-back-what-i-said-about-tech-layoffs/">
+                                Ok, I take back what I said about tech layoffs                  </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/19/this-week-in-apps-apple-epic-antitrust-battle-resumes-apple-sued-over-tracking-googles-new-rules-for-kids-apps/">
+                                This Week in Apps: Apple-Epic antitrust battle resumes, Apple sued over tracking, Google’s new rules for kids’ apps                   </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/19/you-shouldnt-skim-over-gross-dollar-retention/">
+                                You shouldn’t skim over gross dollar retention                  </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/19/a-love-letter-to-micro-funds-the-backbone-and-future-of-venture-capital/">
+                                A love letter to micro funds, the backbone and future of venture capital                        </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/drive-capitals-investors-hit-a-fork-in-the-road/">
+                                Drive Capital’s investors reach a fork in the road                      </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/elon-musk-talked-about-laying-off-75-of-employees-he-may-have-just-gotten-his-wish/">
+                                The exodus at Twitter may have been the plan all along, maybe?                  </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/daily-crunch-nuro-founders-admit-aggressive-hiring-was-a-mistake-in-email-to-laid-off-workers/">
+                                Daily Crunch: Nuro founders admit aggressive hiring ‘was a mistake’ in email to laid-off workers             </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/google-introduces-workspaces-spaces-chats-conversations-summaries/">
+                                Google introduces Workspaces Spaces Chats conversations summaries                       </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/elizabeth-holmes-sentenced-to-11-years-in-prison-for-theranos-fraud/">
+                                Elizabeth Holmes sentenced to 11 years in prison for Theranos fraud                     </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/booz-allen-employee-data-exposed/">
+                                Booz Allen says former staffer downloaded employees’ personal data                      </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/vinfasts-bid-to-attract-u-s-buyers-includes-4-all-electric-suvs-and-maybe-a-sports-car/">
+                                VinFast’s bid to attract US buyers includes 4 all-electric SUVs and maybe a sports car                  </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/quantifying-the-global-e-commerce-slowdown/">
+                                Quantifying the global e-commerce slowdown                      </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/techcrunch-roundup-tam-takedown-green-card-layoffs-when-to-ignore-investor-advice/">
+                                TechCrunch+ roundup: TAM takedown, green card layoffs, when to ignore investor advice                   </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/the-us-securing-open-source-software-act-of-2022-is-a-step-in-the-right-direction/">
+                                The US Securing Open Source Software Act of 2022 is a step in the right direction                       </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/techcrunch-staff-on-what-we-lose-if-we-lose-twitter/">
+                                TechCrunch staff on what we lose if we lose Twitter                     </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/cdsl-malware-internal-systems/">
+                                India’s securities depository CDSL says malware compromised its network                 </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/autonomous-delivery-startup-nuro-lays-off-20-of-workforce/">
+                                Autonomous delivery startup Nuro lays off 20% of workforce                      </a>
+</h2>, <h2 class="post-block__title">
+<a class="post-block__title__link" href="https://techcrunch.com/2022/11/18/combatting-ransomware/">
+                                Ransomware is a global problem that needs a global solution                     </a>
+</h2>

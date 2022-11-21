@@ -40,10 +40,10 @@ def main():
 def get_tech_news(tech_url):
   # Tech crunch 
   url = tech_url
-  print("URL We're trying in tech news function", tech_url)
   try_url = requests.get(tech_url)
   tech_soup = BeautifulSoup(try_url.content, "lxml")
   tech_headline_soup = tech_soup.find_all("h2")
+  
   tech_headlines = []
   count = 0
   for headline in tech_headline_soup:
@@ -54,13 +54,14 @@ def get_tech_news(tech_url):
     for i in story.stripped_strings:
       techcr_headlines = repr((i))
       tech_news.append(techcr_headlines)
-
+  
   tech_news_links = []
   for story in tech_headline_soup:
     headlines = story.find_all("a")
     for items in headlines:
       into_headlines = items["href"]
       tech_news_links.append(into_headlines)
+
     
   techie_news = [item for sublist in zip(tech_news, tech_news_links) for item in sublist]
   
@@ -72,6 +73,7 @@ def get_sf_news(sf_url):
     sf_soup = BeautifulSoup(sf_results.content, "lxml")
     headlines = sf_soup.find_all("h2")
     headlines_list = []
+
     for element in headlines:
       headlines_list.append(element.text)
     links = sf_soup.find_all(class_="post-card-image-link")
@@ -128,28 +130,29 @@ def get_sa_news(sa_url):
 
 
 def get_africa_news(africa_url):
-  get_moz = requests.get(africa_url)
-  moz_soup = BeautifulSoup(get_moz.content, "lxml")
-  moz_headlines = moz_soup.find_all(class_="stories")
-  stories = []
-  for element in moz_headlines:
-    story = element.find_all("a")
-    stories.append(story)
+  ...
+#   get_moz = requests.get(africa_url)
+#   moz_soup = BeautifulSoup(get_moz.content, "lxml")
+#   moz_headlines = moz_soup.find_all(class_="stories")
+#   stories = []
+#   for element in moz_headlines:
+#     story = element.find_all("a")
+#     stories.append(story)
   
-  africa_news = []
-  count = 0
+#   africa_news = []
+#   count = 0
 
-  for story in stories:
-    for i in story:
-      africa_title = story[count]["title"]
-      africa_news.append(africa_title)
-      africa_summary = story[count].find(class_="summary")
-      africa_news.append(africa_summary.text)
-      africa_link = "https://allafrica.com/" + story[count]["href"]
-      africa_news.append(africa_link)
-      count += 1
+#   for story in stories:
+#     for i in story:
+#       africa_title = story[count]["title"]
+#       africa_news.append(africa_title)
+#       africa_summary = story[count].find(class_="summary")
+#       africa_news.append(africa_summary.text)
+#       africa_link = "https://allafrica.com/" + story[count]["href"]
+#       africa_news.append(africa_link)
+#       count += 1
 
-  return africa_news
+#   return africa_news
 
 def get_date_time():
   # Get today's date using the freecodecamp tutorial https://www.freecodecamp.org/news/how-to-get-the-current-time-in-python-with-datetime/#:~:text=You%20can%20get%20the%20current%20time%20in%20a%20particular%20timezone,with%20another%20module%20called%20pytz%20.&text=You%20can%20then%20check%20for,all%20timezones%20of%20the%20world.
