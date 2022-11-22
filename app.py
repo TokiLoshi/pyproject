@@ -85,11 +85,11 @@ def login():
       print("Valid username and password")
       session["user_id"] = 1
       return redirect("/news")
-    elif username == os.getenv("visitor_email") and password == os.getenv("visitor_password"):
+    elif username == os.getenv("alt_email") and password == os.getenv("alt_password"):
       session["user_id"] = 2
       return redirect("/news")
     else:
-      flash("Something went wrong")
+      flash("Incorrect login credentials")
       return  render_template("/login.html")
   else:
     return render_template("/login.html")
