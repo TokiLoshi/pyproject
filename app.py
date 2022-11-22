@@ -8,8 +8,11 @@ import os
 from tempfile import mkdtemp
 from werkzeug.security import check_password_hash, generate_password_hash 
 from cs50 import SQL
-import os
+import os, sys
+from dotenv import load_dotenv
 from project import main, get_date_time
+
+load_dotenv('.env')
 
 # Flask login managerhttps://flask-login.readthedocs.io/en/latest/
 # login_manager = LoginManager()
@@ -35,6 +38,7 @@ Session(app)
 # db = SQL("sqlite:///news.db")
 
 uri = os.getenv("DATABASE_URL")
+print("Osenviron: ", os.getenv)
 if uri.startswith("postgres://"):
     uri = uri.replace("postgres://", "postgresql://")
 db = SQL(uri)

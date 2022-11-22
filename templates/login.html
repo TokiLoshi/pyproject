@@ -6,18 +6,18 @@
 
 {% block main %}
 <form action="/login" method="post">
-      <div class="card fluid shadow center mx-auto m-2 w-50 mb-2 border-0">
-        <h3 class="mt-2">You may only enter if you know the secret word...</h3>
+      <div class="card fluid shadow center mx-auto p-2 m-2 w-75 mb-2 border-0">
+        <h3 class="m-2">You may only enter if you know the secret word...</h3>
         <p>Or... have a guest login</p>
         <!--Photo by Anna Shvets: https://www.pexels.com/photo/white-and-black-french-bulldog-4587991/-->
         <img src="static/frenchie.png" class="card-img-top" alt="newspaper with mug of black coffee on it">
         <div class="mb-3 m-2">
           <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input name="email" type="email" class="form-control mx-auto w-75" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
         <div class="mb-3 pb-2 ms-2 me-2">
           <label for="inputPassword" class="form-label">Password</label>
-          <input name="password" type="password" class="form-control" id="exampleFormControlInput1" placeholder="What's the secret word?">
+          <input name="password" type="password" class="form-control mx-auto w-75" id="exampleFormControlInput1" placeholder="The secret word is..?">
         </div>
         <button class="btn btn-lg mx-auto w-auto mb-5" type="submit" style="background-color: #5E16EA; color : white">Login</button>
       </div>

@@ -41,7 +41,7 @@ def get_tech_news(tech_url):
   # Tech crunch 
   url = tech_url
   try_url = requests.get(tech_url)
-  print(try_url)
+
   # Tutorial on checking response codes: https://www.geeksforgeeks.org/response-status_code-python-requests/
   if try_url.status_code == 200:
     tech_soup = BeautifulSoup(try_url.content, "lxml")
@@ -134,9 +134,7 @@ def get_sa_news(sa_url):
     # Article on combining two lists in python in alternating fashion https://datagy.io/python-combine-lists/
     combined_list = [item for sublist in zip(headlines_no_space, article_links) for item in sublist]
 
-    # for element in combined_list:
-    #   print(element)
-    # print(combined_list)
+
     return combined_list
 
 
