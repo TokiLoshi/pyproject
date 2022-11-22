@@ -73,6 +73,7 @@ def login():
   """Admin wants to login"""
   #Forgets user_id
   session.clear()
+  admin_email = os.getenv("admin_password")
 
   if request.method == "POST":
     username = request.form.get("email")
@@ -80,11 +81,11 @@ def login():
     print("Username: ", username)
     print("Password: ", password)
 
-    if username == "silvabee@gmail.com" and password == "wombat":
+    if username == os.getenv("admin_email") and password == os.getenv("admin_password"):
       print("Valid username and password")
       session["user_id"] = 1
       return redirect("/news")
-    elif username == "visitor@notarealemail.com" and password == "curiouser":
+    elif username == os.getenv("visitor_email") and password == os.getenv("visitor_password"):
       session["user_id"] = 2
       return redirect("/news")
     else:
