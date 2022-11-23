@@ -38,7 +38,6 @@ Session(app)
 # db = SQL("sqlite:///news.db")
 
 uri = os.getenv("DATABASE_URL")
-print("Osenviron: ", os.getenv)
 if uri.startswith("postgres://"):
     uri = uri.replace("postgres://", "postgresql://")
 db = SQL(uri)
@@ -78,11 +77,8 @@ def login():
   if request.method == "POST":
     username = request.form.get("email")
     password = request.form.get("password")
-    print("Username: ", username)
-    print("Password: ", password)
 
     if username == os.getenv("admin_email") and password == os.getenv("admin_password"):
-      print("Valid username and password")
       session["user_id"] = 1
       return redirect("/news")
     elif username == os.getenv("alt_email") and password == os.getenv("alt_password"):
@@ -106,10 +102,6 @@ def news():
     flash("News Time")
     tech_news, sf_news, africa_news, sa_news = main()
     current_sf, current_eastcoast, current_time_europe, current_time_africa = get_date_time()
-    print(current_sf)
-    print(current_eastcoast)
-    print(current_time_europe)
-    print(current_time_africa)
 
     return render_template("news.html", africatime=current_time_africa, zurichtime=current_time_europe, nytime=current_eastcoast, sftime=current_sf, tech_news=tech_news, sf_news=sf_news, africa_news=africa_news, sa_news=sa_news)
 
